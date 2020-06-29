@@ -20,9 +20,6 @@ const App = () => (
   <div>
       <TarjetaFruta />
       <hr/>
-      <TarjetaFruta>
-        Hola Función
-      </TarjetaFruta>
   </div>
 )
 
