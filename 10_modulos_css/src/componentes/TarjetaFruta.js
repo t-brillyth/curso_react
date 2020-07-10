@@ -1,4 +1,5 @@
 import React from 'react'
+// import './TarjetaFruta.css'
 import styles from './TarjetaFruta.module.css'
 
 class TarjetaFruta extends React.Component {
@@ -30,7 +31,7 @@ class TarjetaFruta extends React.Component {
     const clases = styles.card + ' ' + activeClass
 
     return (
-      <div className={clases}> 
+      <div className={clases}>
         <h3>{ this.props.name }</h3>
         <div>Cantidad: { this.state.cantidad }</div>
         <button onClick={this.agregar}>+</button>
