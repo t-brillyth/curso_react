@@ -26,11 +26,10 @@ class TarjetaFruta extends React.Component {
 
   render () {
     const hasItems = this.state.cantidad > 0
-    const activeClass = hasItems ? 'TarjetaFruta-activa' : ''
-    const clases = 'TarjetaFruta ' + activeClass
+    const clases = `card ${hasItems ? 'card-activa' : '' }`
 
     return (
-      <div className={clases}>
+      <div className={clases}> 
         <h3>{ this.props.name }</h3>
         <div>Cantidad: { this.state.cantidad }</div>
         <button onClick={this.agregar}>+</button>
